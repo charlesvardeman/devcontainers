@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "charlesvardeman/devcontainer-template"
+  site-url: "https://charlesvardeman.github.io/charlesvardeman/devcontainer-template"
+  description: "Base ML Devcontainer Template"
+  repo-branch: main
+  repo-url: "https://github.com/charlesvardeman/charlesvardeman/devcontainer-template"

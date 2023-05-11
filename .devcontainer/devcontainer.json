@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python Environment for TrustedAI",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pdm install",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+		"streetsidesoftware.code-spell-checker",
+		"ms-toolsai.jupyter",
+		"ms-python.python",
+		"editorconfig.editorconfig",
+		"github.vscode-pull-request-github",
+		"ms-azuretools.vscode-docker",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"ms-python.pylint",
+		"ms-python.isort",
+		"ms-python.flake8",
+		"ms-python.black-formatter",
+		"ms-vsliveshare.vsliveshare",
+		"ryanluker.vscode-coverage-gutters",
+		"bungcip.better-toml",
+		"Iterative.dvc",
+		"redhat.vscode-yaml",
+		"GitHub.copilot-chat",
+		"GitHub.copilot-labs",
+		"GitHub.copilot-nightly"
+	]
+    	}
+	},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
